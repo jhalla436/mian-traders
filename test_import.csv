@@ -1,0 +1,11 @@
+name,sku,mrp,selling_price_default,purchase_price_manual,stock_qty,low_stock_alert_qty,pricing_mode,shell_rate,width_in,length_in,height_in,sheet_full_w,sheet_full_l,category,company
+Test Product 1,TP001,100,120,80,10,2,manual,,,,,,,Test Category,
+Test Product 2,TP002,200,240,160,15,3,manual,,,,,,,Test Category,
+Test Product 3,TP003,300,360,240,20,4,manual,,,,,,,Test Category,
+Test Product 4,TP004,400,480,320,25,5,manual,,,,,,,Test Category,
+Test Product 5,TP005,500,600,400,30,6,manual,,,,,,,Test Category,
+Test Product 6,TP006,600,720,480,35,7,manual,,,,,,,Test Category,
+Test Product 7,TP007,700,840,560,40,8,manual,,,,,,,Test Category,
+Test Product 8,TP008,800,960,640,45,9,manual,,,,,,,Test Category,
+Test Product 9,TP009,900,1080,720,50,10,manual,,,,,,,Test Category,
+Test Product 10,TP010,1000,1200,800,55,11,manual,,,,,,,Test Category,

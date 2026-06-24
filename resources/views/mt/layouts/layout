@@ -1,0 +1,33 @@
+@'
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ config('app.name', 'Mian Traders') }}</title>
+</head>
+<body style="font-family:Arial;margin:0;background:#f6f6f6;">
+<div style="display:flex;min-height:100vh;">
+  <div style="width:240px;background:#111827;color:#fff;padding:16px;position:sticky;top:0;height:100vh;">
+    <h3 style="margin-top:0;">{{ config('app.name', 'Mian Traders') }}</h3>
+    <a href="{{ route('mt.pos.index') }}" style="display:block;color:#fff;text-decoration:none;padding:10px;border-radius:8px;margin-bottom:6px;">POS</a>
+    <a href="{{ route('mt.headings.index') }}" style="display:block;color:#fff;text-decoration:none;padding:10px;border-radius:8px;margin-bottom:6px;">Headings</a>
+    <form method="POST" action="{{ route('logout') }}" style="margin-top:14px;">
+      @csrf
+      <button type="submit" style="width:100%;padding:10px;border:0;border-radius:8px;background:#374151;color:#fff;cursor:pointer;">Logout</button>
+    </form>
+  </div>
+  <div style="flex:1;padding:18px;">
+    @if(session('success'))
+      <div style="padding:10px;border-radius:10px;margin-bottom:12px;background:#dcfce7;">{{ session('success') }}</div>
+    @endif
+    @if(session('error'))
+      <div style="padding:10px;border-radius:10px;margin-bottom:12px;background:#fee2e2;">{{ session('error') }}</div>
+    @endif
+
+    @yield('content')
+  </div>
+</div>
+</body>
+</html>
+'@ | Set-Content -Encoding UTF8 .\resources\views\mt\layouts\app.blade.php
